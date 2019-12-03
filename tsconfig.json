@@ -1,0 +1,50 @@
+{
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "compilerOptions": {
+    "sourceMap": true,
+    // 与 Vue 的浏览器支持保持一致 编译目标平台
+    "target": "es5",
+    // 这可以对 `this` 上的数据属性进行更严格的推断 
+    // 启用所有严格类型检查选项。 启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict， --strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization
+    "strict": false,
+    "removeComments": true,
+    // 解析基准目录
+    "baseUrl": "./",
+    // 相当于 alias
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+    // 可以利用 tree-shake:
+    // "module": "es2015",
+    // node方式处理模块
+    "moduleResolution": "node",
+    // 启用装饰器
+    "experimentalDecorators": true,
+    // null模式检查
+    "strictNullChecks": true,
+    // 必须要确保每个实例的属性都会初始值
+    "strictPropertyInitialization": true,
+    //允许编译javascript文件。 这个非常重要
+    "allowJs": true,
+    // 允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true,
+    // 编译过程中需要引入的库文件的列表。 
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.promise"
+    ],
+    // 允许处理json模块
+    "resolveJsonModule": true
+  }
+}

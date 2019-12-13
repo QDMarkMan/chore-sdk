@@ -10,6 +10,26 @@ const tslint = require('rollup-plugin-tslint')
 const resolveFile = function(filePath) {
   return path.join(__dirname, '..', filePath)
 }
+const name = 'chroe-sdk'
+// target config
+const configs = {
+  'esm-bundler': {
+    file: resolveFile(`dist/${name}.esm-bundler.js`),
+    format: `es`
+  },
+  cjs: {
+    file: resolveFile(`dist/${name}.cjs.js`),
+    format: `cjs`
+  },
+  global: {
+    file: resolveFile(`dist/${name}.global.js`),
+    format: `iife`
+  },
+  esm: {
+    file: resolveFile(`dist/${name}.esm.js`),
+    format: `es`
+  }
+}
 
 module.exports = [
   {
@@ -22,7 +42,7 @@ module.exports = [
     plugins: [
       tslint({}),
       typescript({
-        tsconfig: "tsconfig.json"
+        tsconfig: path.resolve(__dirname, '../tsconfig.json')
       }),
       buble()
     ]

@@ -7,3 +7,4 @@ extensions/**/dist/
 test_data/
 test-results/
 yarn-error.log
+package-lock.json

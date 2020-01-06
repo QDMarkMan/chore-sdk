@@ -1,4 +1,4 @@
-console.log('chroe sdk')
+console.log('chore sdk')
 
 console.log('start')
 

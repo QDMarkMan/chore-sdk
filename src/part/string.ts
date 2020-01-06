@@ -1,10 +1,4 @@
 /** ---------------------------------------------------------------------------------------------
  *  @Author [ETongfu].
- *  @Des [].
+ *  @Des [String util part].
  *-------------------------------------------------------------------------------------------- */
-import { addUrlParam } from '../helper/url'
-console.log('http.js')
-const demo: string = addUrlParam('aaa', 'demo', 'asd')
-console.log(demo)
-export default {}
-

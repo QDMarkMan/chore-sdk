@@ -11,10 +11,9 @@
   console.log('http.js');
   var demo = addUrlParam('aaa', 'demo', 'asd');
   console.log(demo);
-  console.log(11111111);
   //# sourceMappingURL=http.js.map
 
-  console.log('chroe sdk');
+  console.log('chore sdk');
   console.log('start');
   //# sourceMappingURL=index.js.map
 

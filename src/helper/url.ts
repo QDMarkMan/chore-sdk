@@ -1,5 +1,5 @@
 /**
- * 新增参数
+ * add param for url
  * @export
  * @param {string} url
  * @param {string} name

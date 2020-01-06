@@ -10,7 +10,7 @@ const tslint = require('rollup-plugin-tslint')
 const resolveFile = function(filePath) {
   return path.join(__dirname, '..', filePath)
 }
-const name = 'chroe-sdk'
+const name = 'chore-sdk'
 // target config
 const configs = {
   'esm-bundler': {
